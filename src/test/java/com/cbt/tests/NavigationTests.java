@@ -8,8 +8,6 @@ import java.util.Locale;
 
 public class NavigationTests {
 
-
-
     public static void main(String[] args) {
 
         String OS = System.getProperty("os.name").toLowerCase();
@@ -23,8 +21,6 @@ public class NavigationTests {
         else if(OS.contains("mac")){
             testSafari();
         }
-
-
 
     }
     static void test(WebDriver driver){
@@ -46,11 +42,7 @@ public class NavigationTests {
 
         StringUtility.verifyEquals(expectedTitleGoogle, actualTitleGoogle);
         StringUtility.verifyEquals(expectedTitleEtsy, actualTitleEtsy);
-
         driver.quit();
-
-
-
     }
     private static void testChrome(){
         WebDriver driver = BrowserFactory.getDriver("chrome");
