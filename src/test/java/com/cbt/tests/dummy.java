@@ -8,4 +8,7 @@ public class dummy {
         System.out.println("pulled down");
 
     }
+    public static void dummy(){
+
+    }
 }
