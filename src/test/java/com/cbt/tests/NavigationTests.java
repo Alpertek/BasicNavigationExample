@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class NavigationTests {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Throwable {
 
         String OS = System.getProperty("os.name").toLowerCase();
 
