@@ -6,6 +6,7 @@ import net.sourceforge.tess4j.Tesseract;
 
 import org.openqa.selenium.WebDriver;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
 
 public class Hello {
@@ -13,10 +14,15 @@ public class Hello {
     public static Object get(Object[] array,int index){
         return array[index];
     }
+    public static String typeOf(Object object) {
 
+        String type = object.getClass().getSimpleName();
+
+        return type;
+    }
     public static void main(String[] args) throws TypeMismatchException {
-        Amount amount = addAmounts(new Amount("TL",1000),new Amount("EURO",500));
-
+        Amount amount = addAmounts(new Amount("TL",1000),new Amount("TL",500));
+        System.out.println(typeOf(amount));
         System.out.println(amount.amount);
         System.out.println(amount.currency);
     }
