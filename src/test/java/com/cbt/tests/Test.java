@@ -7,7 +7,7 @@ public class Test {
 class Test2 extends Test implements Walk{
 
     public static void main(String[] args) {
-        Walk.main(null);
+        
     }
 
 }
