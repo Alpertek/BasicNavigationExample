@@ -13,7 +13,7 @@ class Test2 extends Test implements Walk{
 }
 interface Walk{
     static void main(String[] args) {
-        System.out.println("hello");
+        System.out.println("Raise finger");
     }
     default int topla() throws InterruptedException {
         System.out.println(this.getClass().getName());
