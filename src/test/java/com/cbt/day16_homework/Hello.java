@@ -16,6 +16,7 @@ public class Hello {
 
     public static void main(String[] args) throws TypeMismatchException {
         Amount amount = addAmounts(new Amount("TL",1000),new Amount("EURO",500));
+
         System.out.println(amount.amount);
         System.out.println(amount.currency);
     }
