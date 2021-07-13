@@ -27,8 +27,18 @@ public class Hello {
 
         ArrayList<Integer> list1 = new ArrayList<>();
         List<Integer> list2 = new ArrayList<Integer>();
-        Collection<Integer> list3 = new ArrayList<>();
-        System.out.println(list3.iterator().next());
+
+        list1.add(1);
+        list1.add(5);
+        list2.add(4);
+        list2.add(6);
+        ArrayList<List<Integer>> wordArrays = new ArrayList<List<Integer>>();
+        wordArrays.add(list1);
+        wordArrays.add(list2);
+        System.out.println(wordArrays.get(0).get(0));
+        System.out.println(wordArrays.get(0).get(1));
+        System.out.println(wordArrays.get(1).get(0));
+        System.out.println(wordArrays.get(1).get(1));
 
     }
     static Amount addAmounts(Amount a1, Amount a2) throws TypeMismatchException {
