@@ -6,8 +6,7 @@ import net.sourceforge.tess4j.Tesseract;
 
 import org.openqa.selenium.WebDriver;
 
-import java.util.Arrays;
-import java.util.InputMismatchException;
+import java.util.*;
 
 public class Hello {
 
@@ -25,6 +24,12 @@ public class Hello {
         System.out.println(typeOf(amount));
         System.out.println(amount.amount);
         System.out.println(amount.currency);
+
+        ArrayList<Integer> list1 = new ArrayList<>();
+        List<Integer> list2 = new ArrayList<Integer>();
+        Collection<Integer> list3 = new ArrayList<>();
+        System.out.println(list3.iterator().next());
+
     }
     static Amount addAmounts(Amount a1, Amount a2) throws TypeMismatchException {
         if(!a1.currency.equals(a2.currency)){
